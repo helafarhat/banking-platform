@@ -1,0 +1,33 @@
+spring.application.name=banking-backend
+
+# ── Database 1 : banque_db ───────────────────────────────────
+spring.datasource.banque.jdbc-url=jdbc:mysql://localhost:3306/banque_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.banque.username=root
+spring.datasource.banque.password=
+spring.datasource.banque.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# ── Database 2 : plateforme_db ───────────────────────────────
+spring.datasource.plateforme.jdbc-url=jdbc:mysql://localhost:3306/plateforme_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.plateforme.username=root
+spring.datasource.plateforme.password=
+spring.datasource.plateforme.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# ── JPA ───────────────────────────────────────────────────────
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=none
+
+# ── JWT ───────────────────────────────────────────────────────
+jwt.secret=alBarakaBankSecretKey2024SuperSecureKey123456789
+jwt.expiration=86400000
+
+# ── Email (Mailtrap) ─────────────────────────────────────────
+spring.mail.host=sandbox.smtp.mailtrap.io
+spring.mail.port=2525
+spring.mail.username=a490d55562d685
+spring.mail.password=dffab738e433e2
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+# ── CORS ─────────────────────────────────────────────────────
+frontend.url=http://localhost:4200
+server.port=8080
